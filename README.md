@@ -34,7 +34,8 @@ docker pull nvidia/cuda:10.1-base
 
 nvidia-docker run -i -t nvidia/cuda:10.1-base /bin/bash 로 도커 내부로 들어간 뒤
 
-https://index.ros.org/doc/ros2/Installation/Crystal/Linux-Install-Debians/ <br>
+바이너리 : https://index.ros.org/doc/ros2/Installation/Crystal/Linux-Install-Debians/ <br>
+https://index.ros.org/doc/ros2/Installation/Crystal/Linux-Development-Setup/ <br>
 
 설치하다가 6. Asia 선택후 69. Seoul 선택
 
