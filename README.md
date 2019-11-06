@@ -42,3 +42,6 @@ nvidia-docker run -i -t nvidia/cuda:10.1-base /bin/bash 로 도커 내부로 들
 
 https://github.com/RobotWebTools/ros2-web-bridge/issues/118#issuecomment-487582528
 
+
+## x display error
+docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix repo-test-3 /bin/bash
