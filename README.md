@@ -33,12 +33,9 @@ docker pull nvidia/cuda:10.1-base
 ## ros2 crystal install<br>
 
 nvidia-docker run -i -t nvidia/cuda:10.1-base /bin/bash 로 도커 내부로 들어간 뒤
-
+한글(추천) : http://snowdeer.github.io/ros2/2019/02/16/how-to-install-ros2-crystall-using-apt/ <br>
 바이너리 : https://index.ros.org/doc/ros2/Installation/Crystal/Linux-Install-Debians/ <br>
-빌드(추천) : https://index.ros.org/doc/ros2/Installation/Crystal/Linux-Development-Setup/ <br>
-
-
-설치하다가 6. Asia 선택후 69. Seoul 선택
+빌드 : https://index.ros.org/doc/ros2/Installation/Crystal/Linux-Development-Setup/ <br>
 
 ## npm install 과정
 
