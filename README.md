@@ -1,3 +1,6 @@
+# add-apt-repository
+sudo apt-get install software-properties-common
+
 # self-driving using LGSVL and ROS2 crystal
 
 Docker 내부
