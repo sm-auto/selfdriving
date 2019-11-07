@@ -38,7 +38,7 @@ nvidia-docker run -i -t nvidia/cuda:10.1-base /bin/bash 로 도커 내부로 들
 바이너리 : https://index.ros.org/doc/ros2/Installation/Crystal/Linux-Install-Debians/ <br>
 빌드 : https://index.ros.org/doc/ros2/Installation/Crystal/Linux-Development-Setup/ <br>
 
-## npm install 과정
+## ros2_bridge install
 
 https://github.com/RobotWebTools/ros2-web-bridge/issues/118#issuecomment-487582528
 
