@@ -5,19 +5,17 @@ sudo apt-get install software-properties-common
 
 Docker 내부
 
-nvidia driver (440)<br>
 
-nvidia cuda<br>
+CUDA 10.1
 
-sudo<br>
 
-npm<br>
+OpenGL
 
-nodejs<br>
 
-ros2 crystal<br>
+ROS2 Dashing
 
-ros2 web bridge<br>
+
+ros2-web-bridge
 
 ## DOCKER INSTALL <br>
 
@@ -33,7 +31,9 @@ nvidia-docker2까지 설치하고 터미널에서 nvidia-docker가 있으면 성
 
 docker pull nvidia/cuda:10.1-base
 
-## ros2 crystal install<br>
+## ros2 dashing(or crystal) install<br>
+
+
 
 nvidia-docker run -i -t nvidia/cuda:10.1-base /bin/bash 로 도커 내부로 들어간 뒤
 
