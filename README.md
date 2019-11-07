@@ -45,3 +45,8 @@ https://github.com/RobotWebTools/ros2-web-bridge/issues/118#issuecomment-4875825
 
 ## x display error
 docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix repo-test-3 /bin/bash
+
+nvidia-docker run -it --net=host --env="DISPLAY" --env="QT_X11_NO_MITSHM=1" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" ksm/ros2:dashing_bridge /bin/bash
+
+## QT
+https://tobelinuxer.tistory.com/19
