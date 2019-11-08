@@ -1,5 +1,5 @@
-# add-apt-repository
-sudo apt-get install software-properties-common
+# add-apt-repository가 없으면..
+$ sudo apt-get install software-properties-common
 
 # ros visualization
 https://github.com/lgsvl/simulator/issues/44
@@ -8,10 +8,10 @@ https://github.com/lgsvl/simulator/issues/44
 https://github.com/lgsvl/simulator/issues/398#issuecomment-537131034 <- image_transport camera to image
 
 
-sudo apt-get install ros-dashing-image-transport <- image_transport 설치
+$ sudo apt-get install ros-dashing-image-transport <- image_transport 설치
 
 
-sudo apt install ros-dashing-image-transport-pluggins <- image_transport plugins
+$ sudo apt install ros-dashing-image-transport-plugins <- image_transport plugins
 
 
 # self-driving using LGSVL and ROS2 crystal
