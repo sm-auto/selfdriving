@@ -5,7 +5,7 @@ sudo apt-get install software-properties-common
 https://github.com/lgsvl/simulator/issues/44
 
 
-https://github.com/lgsvl/simulator/issues/398
+https://github.com/lgsvl/simulator/issues/398 <- image_transport camera to image
 
 
 # self-driving using LGSVL and ROS2 crystal
