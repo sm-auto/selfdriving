@@ -44,9 +44,10 @@ docker pull nvidia/cuda:10.1-base
 
 nvidia-docker run -i -t nvidia/cuda:10.1-base /bin/bash 로 도커 내부로 들어간 뒤
 
-한글(추천) : http://snowdeer.github.io/ros2/2019/02/16/how-to-install-ros2-crystall-using-apt/ <br>
-바이너리 : https://index.ros.org/doc/ros2/Installation/Crystal/Linux-Install-Debians/ <br>
-빌드 : https://index.ros.org/doc/ros2/Installation/Crystal/Linux-Development-Setup/ <br>
+바이너리 : https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Debians/ <br>
+에서 Install development tools and ROS tools¶ 까지 진행 후
+빌드 : https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Development-Setup/ <br>
+Install ROS 2 packages¶부터 시작
 
 ## ros2_bridge install
 
