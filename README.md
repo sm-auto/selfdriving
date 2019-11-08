@@ -6,7 +6,7 @@ https://github.com/lgsvl/simulator/issues/44
 
 
 https://github.com/lgsvl/simulator/issues/398 <- image_transport camera to image
-
+https://github.com/lgsvl/simulator/issues/411 <- image_transport plugins
 
 # self-driving using LGSVL and ROS2 crystal
 
