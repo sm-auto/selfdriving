@@ -1,6 +1,10 @@
 # add-apt-repository
 sudo apt-get install software-properties-common
 
+# ros visualization
+https://github.com/lgsvl/simulator/issues/44
+
+
 # self-driving using LGSVL and ROS2 crystal
 
 Docker 내부
