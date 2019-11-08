@@ -5,10 +5,14 @@ sudo apt-get install software-properties-common
 https://github.com/lgsvl/simulator/issues/44
 
 
-https://github.com/lgsvl/simulator/issues/398 <- image_transport camera to image
+https://github.com/lgsvl/simulator/issues/398#issuecomment-537131034 <- image_transport camera to image
 
 
-https://github.com/lgsvl/simulator/issues/411 <- image_transport plugins
+sudo apt-get install ros-dashing-image-transport <- image_transport 설치
+
+
+sudo apt install ros-kinetic-image-transport-pluggins <- image_transport plugins
+
 
 # self-driving using LGSVL and ROS2 crystal
 
