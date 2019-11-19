@@ -100,3 +100,45 @@ $ cmake \
  
  $ sudo make install
  $ sudo ldconfig
+ 
+ $ pkg-config --modversion opencv
+ ```
+ 마지막 명령어로 opencv 버전이 확인되면 설치완료
+ 
+ ### Anaconda Install
+ https://www.anaconda.com/distribution/#download-section
+ 위 링크에서 아나콘다를 다운받고, 다운받은 디렉토리로 이동한다
+ ```
+ $ bash Anaconda3-2019.10-Linux-x86_64.sh
+ ```
+ 안내되는 문구를 읽고 설치를 진행하면 된다.
+ 
+ 경로는 기본적으로 세팅되어 있는 경로로 설치.
+ 
+ ```
+ $ source ~/.bashrc
+ ```
+ 위 명령어로 conda 진입
+ 
+ ```
+ $ conda create --name tf python==3.7
+ $ conda activate tf
+ ```
+ 'TF'는 제가 지정한 이름으로 아무거나 사용하셔도 무방합니다.
+ 
+ ```
+ $ conda install 'PACKAGE_NAME'
+ ```
+ PACKAGE_NAME에 설치하고싶은 패키지 명들을 적어준다. ex) numpy, scipy, tensorflow, ...
+ 
+ 아래는 설치 예제이다.
+ ```
+ $ conda install numpy
+ $ conda insatll matplotlib
+ $ conda install -c conda-forge moviepy
+ $ conda install tensorflow-gpu==1.14
+ $ conda install imageio==2.4.1
+ $ conda install scipy==1.1.0
+ $ conda install requests
+ $ conda install -c conda-forge opencv
+ ```
