@@ -48,3 +48,55 @@ export LD_LIBRARY_PATH=/usr/local/cuda/lib64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PA
 $ source ~/.bashrc
 ```
 추가해준 뒤에 bashrc를 재시작해준다.
+
+### Ubuntu OpenCV 3.31 Install
+출처 : https://kkokkal.tistory.com/1328
+```
+$ sudo add-apt-repository "deb http://security.ubuntu.com/ubuntu xenial-security main"
+$ sudo apt update
+$ sudo apt upgrade
+$ sudo apt install ubuntu-restricted-extras
+
+$ sudo apt install build-essential cmake git pkg-config
+$ sudo apt install libjpeg-dev libtiff5-dev libjasper-dev libpng-dev
+$ sudo apt install libavcodec-dev libavformat-dev libswscale-dev
+$ sudo apt install libdc1394-22-dev libxvidcore-dev libx264-dev x264
+$ sudo apt install libxine2-dev libv4l-dev v4l-utils
+$ sudo apt install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev
+$ sudo apt install libgtk-3-dev
+$ sudo apt install libatlas-base-dev libeigen3-dev gfortran
+$ sudo apt install python3-dev python3-numpy libtbb2 libtbb-dev
+
+$ mkdir ~/opencv
+$ cd ~/opencv
+$ wget -O opencv-3.3.1.zip https://github.com/opencv/opencv/archive/3.3.1.zip
+$ wget -O opencv_contrib-3.3.1.zip https://github.com/opencv/opencv_contrib/archive/3.3.1.zip
+$ unzip opencv-3.3.1.zip
+$ unzip opencv_contrib-3.3.1.zip
+
+$ mkdir build && cd build
+
+$ cmake \
+-D CMAKE_BUILD_TYPE=Release \
+-D CMAKE_INSTALL_PREFIX=/usr/local \
+-D BUILD_WITH_DEBUG_INFO=OFF \
+-D BUILD_EXAMPLES=ON \
+-D BUILD_opencv_python2=OFF \
+-D BUILD_opencv_python3=ON \
+-D INSTALL_PYTHON_EXAMPLES=ON \
+-D OPENCV_EXTRA_MODULES_PATH=../opencv_contrib-3.4.0/modules \
+-D WITH_TBB=ON \
+-D WITH_V4L=ON \
+-D BUILD_opencv_cudacodec=OFF \ # 이 옵션은 error: dynlink_nvcuvid.h no such file or directory가 보이면 해주면 된다.
+../opencv-3.3.1/
+ 
+ 위 cmake로 안되면 링크에 있는 거로 진행
+ 
+ $ nproc
+ 위 명령어로 가용할 수 있는 cpu수를 확인 후
+ 
+ $ make -j6 
+ 숫자 자리에 nproc로 나온 숫자보다 작은 숫자를 넣는다 (2이상)
+ 
+ $ sudo make install
+ $ sudo ldconfig
