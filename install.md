@@ -39,7 +39,7 @@ $ sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*
 ```
 후에 .bashrc 파일 맨 끝에
 ```
-export PATH=/usr/local/cuda-9.0/bin${PATH:+:${PATH}}
+export PATH=/usr/local/cuda-10.1/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 ```
 를 추가해준다.
