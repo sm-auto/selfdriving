@@ -104,8 +104,10 @@ $ cmake \
  $ pkg-config --modversion opencv
  ```
  마지막 명령어로 opencv 버전이 확인되면 설치완료
+ ### ROS Melodic Install
+ http://wiki.ros.org/melodic/Installation/Ubuntu
  
- ### Anaconda Install
+ ### (Optional)Anaconda Install
  https://www.anaconda.com/distribution/#download-section
  위 링크에서 아나콘다를 다운받고, 다운받은 디렉토리로 이동한다
  ```
